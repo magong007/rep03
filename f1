@@ -1,1 +1,2 @@
-f1 from rep03
+echo "f1 from rep03"
+echo "hello from $1"
