@@ -49,7 +49,7 @@ jobs:
         env:
           RANDOM_NUMBER: ${{ steps.foo.outputs.random-number }}
       - name: Get Pokemon name
-        uses: magong007/tangyuan1 # Uses an action in the root directory
+        uses: magong007/tangyuan1@main # Uses an action in the root directory
         id: pokemon
         with:
           pokemon_id: 150
