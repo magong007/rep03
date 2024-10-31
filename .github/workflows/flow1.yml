@@ -48,3 +48,11 @@ jobs:
         shell: bash
         env:
           RANDOM_NUMBER: ${{ steps.foo.outputs.random-number }}
+      - name: Get Pokemon name
+        uses: magong007/tangyuan1 # Uses an action in the root directory
+        id: pokemon
+        with:
+          pokemon_id: 150
+
+      - name: Get the pokemon
+        run: echo "${{ steps.pokemon.outputs.pokemon_name }} attack"    
